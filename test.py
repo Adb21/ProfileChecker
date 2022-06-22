@@ -10,10 +10,6 @@
 # input : Dict
 # output : Dict [result,total_match_score,matching_attributes,self.ignored_attributes]
 
-##Optimization
-# fast processing [threads on constraints]
-# support more fields [kwargs]
-
 ### algos used : fuzzywuzzy
 
 
