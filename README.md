@@ -17,7 +17,7 @@ import class
 from ProfileChecker import ProfileChecker
 ```
 ### input
-1. profiles [ list of 2 profiles with dictionary fotypermat ] 
+1. profiles [ list of 2 profiles with dictionary type ] 
 2. fields [ list of fields for comparision ]
 ==> Model default fields : </br>
 **string Type** : 'email', 'first_name', 'last_name', 'date_of_birth' (YYYY-MM-DD)</br>
