@@ -47,13 +47,14 @@ print(result)
 >> {'result': 'Duplicate', 'total_score': 3, 'matching_attributes': ['class_year', 'date_of_birth', 'email', 'first_name', 'last_name'], 'non_matching_attributes': [None], 'ignored_attributes': [None]}
 ```
 
-## Constrains
-1. if first_name + last_name + email has match > 80%, then => score = +1
-2. if same class year, then => score = +1 | elif either is None, then => score = score | else no match, then => score = -1
+## Constrains/Working of 2 profiles
+1. if first_name + last_name + email has match > 80%, then => update total_score to +1
+2. if same class year, then update => total_score to +1 | elif either is None, then no update => total_score = total_score | else no match, then update => total_score to -1
 3. Rule 2 for date_of_birth
 
 ## Extras
-* extra fields can be added  to fields of either string or Integer type
+* extra fields can be added  to fields list of either string or Integer type.
+* * eg 'college':'ITM Universe'
 ```
 p1 = { id: 1,'college':'ITM Universe', 'email': 'knowkanhai@gmail.com', 'first_name': 'Kanhai', 'last_name': 'Patel', 'class_year': 2012, 'date_of_birth': '1990-10-11'}
 p2 = { id: 2,'college':'itm university', 'email': 'knowkanhai@gmail.com', 'first_name': 'Kanhai1', 'last_name': 'Shah', 'class_year': 2012, 'date_of_birth': '1990-10-11'}
