@@ -37,11 +37,11 @@ p = ProfileChecker()
 result = p.find_duplicates(profiles,fields)
 ```
 ### output
-**result** : returns str: 'Duplicate' or 'Not Duplicate'<br />
-**total_score** : returns int type of total score for each fields (greater than 1 => Duplicate else Non-Duplicate) <br />
-**matching_attributes** : returns list of fields which matches with given constraints <br />
-**non_matching_attributes** : returns list of fields which doesnot match with given constraints <br />
-**ignored_attributes**: returns list of fields which are None or not taken into consideration with given constraints <br />
+  * **result** : returns str: 'Duplicate' or 'Not Duplicate'<br />
+  * **total_score** : returns int type of total score for each fields (greater than 1 => Duplicate else Non-Duplicate) <br />
+  * **matching_attributes** : returns list of fields which matches with given constraints <br />
+  * **non_matching_attributes** : returns list of fields which doesnot match with given constraints <br />
+  * **ignored_attributes**: returns list of fields which are None or not taken into consideration with given constraints <br />
 ```
 print(result)
 >> {'result': 'Duplicate', 'total_score': 3, 'matching_attributes': ['class_year', 'date_of_birth', 'email', 'first_name', 'last_name'], 'non_matching_attributes': [None], 'ignored_attributes': [None]}
